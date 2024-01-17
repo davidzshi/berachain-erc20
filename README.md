@@ -2,6 +2,8 @@
 
 Fast way to deploy an ERC20 using Foundry. To use it, pull the repo. 
 
+Get some testnet Bera in the wallet you will deploy the contract with: https://artio.faucet.berachain.com/
+
 Then install Foundry: https://book.getfoundry.sh/getting-started/installation
 
 Get your Berachain private key and set it as a local environment variable by running this in your shell:
