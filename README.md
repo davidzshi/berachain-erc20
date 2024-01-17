@@ -11,7 +11,7 @@ Get your Berachain private key and set it as a local environment variable by run
 export PRIVATE_KEY=0x...
 ```
 
-Run forge compile in the root of the directory. 
+Run ```forge build``` in the root of the directory. 
 
 Make sure you have adequate gas in your Berachain account, then run:
 ```
