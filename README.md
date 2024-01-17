@@ -2,7 +2,10 @@
 
 Fast way to deploy an ERC20 using Foundry. To use it, pull the repo. 
 
-Get your Berachain private key and set it as a local environment variable with export PRIVATE_KEY=0x... 
+Get your Berachain private key and set it as a local environment variable by running this in your shell:
+```
+export PRIVATE_KEY=0x...
+```
 
 Run forge compile in the root of the directory. 
 
