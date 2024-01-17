@@ -1,66 +1,13 @@
-## Foundry
+## Berachain-ERC20
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+Fast way to deploy an ERC20 using Foundry. To use it, pull the repo. 
 
-Foundry consists of:
+Get your Berachain private key and set it as a local environment variable with export PRIVATE_KEY=0x... 
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+Run forge compile in the root of the directory. 
 
-## Documentation
-
-https://book.getfoundry.sh/
-
-## Usage
-
-### Build
-
-```shell
-$ forge build
+Make sure you have adequate gas in your Berachain account, then run:
 ```
-
-### Test
-
-```shell
-$ forge test
+forge script script/BeraBera.s.sol:DeployBeraBera --broadcast --private-key $PRIVATE_KEY --rpc-url "https://artio.rpc.berachain.com" --chain-id 80085
 ```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+You can check your deployment by pasting the contract address into: https://artio.beratrail.io/
